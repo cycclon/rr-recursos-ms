@@ -1,0 +1,22 @@
+{
+  "name": "rr-recursos-ms",
+  "version": "0.1.0",
+  "description": "Microservicio de gestión de recursos para el sistema Rioja Recursos",
+  "main": "src/index.js",
+  "scripts": {
+    "Start": "node src/index.js",
+    "devStart": "nodemon src/index.js"
+  },
+  "author": "Pedro R. Spialieri",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
