@@ -2,6 +2,8 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const InsumosRoute = require("./routes/insumos")
+const EquiposRoute = require("./routes/equipos")
+const RecursosRoute = require('./routes/recursos')
 
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -16,5 +18,8 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/insumos', InsumosRoute)
+app.use('/equipos', EquiposRoute)
+app.use('/recursos', RecursosRoute)
 
-app.listen(3003, ()=> console.log('RR: microservicio de Recursos iniciado correctamente en puerto 3003.'))
+app.listen(3003, ()=> console.log(
+    'RR: microservicio de Recursos iniciado correctamente en puerto 3003.'))

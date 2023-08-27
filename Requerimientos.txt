@@ -1,0 +1,8 @@
+ - Si el nivel de acceso del solicitante es 3 (administrador),
+ validar que en las solicitudes de edición o modificación de recursos existentes,
+ coincidan el centro donde fue registrado el recurso y el centro que administra el
+ solicitante.
+    + Enviar en el cuerpo de la solicitud, un array con los encargados del centro
+      donde fue registrado el recurso
+    + Implementar una fachada que reciba las solicitudes del front end y coordine
+      las solicitudes correspondientes a los microservicios.

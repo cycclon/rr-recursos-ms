@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
+const Recurso = require('./recurso')
 
-const esquemaEquipo = mongoose.Schema({
+const Equipo = mongoose.Schema({
     modelo: {
         type: String,
         required: true,
@@ -17,4 +18,4 @@ const esquemaEquipo = mongoose.Schema({
     }
   }, { versionKey: false })
   
-  module.exports = mongoose.model('Equipo', esquemaEquipo)
+  module.exports = Recurso.discriminator("Equipo", Equipo)
