@@ -8,7 +8,7 @@ const RecursosRoute = require('./routes/recursos')
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-mongoose.connect(process.env.DB_URL);
+mongoose.connect(process.env.DB_URL + "recursos?authSource=admin");
 const db = mongoose.connection;
 
 db.on('error', (error)=> console.log(error));
